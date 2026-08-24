@@ -26,7 +26,7 @@ function BusinessInsights({ setActivePage }) {
       setError(false);
 
       const response = await fetch(
-        "http://localhost:5000/api/dashboard/summary?period=all"
+        "/api/dashboard/summary?period=all"
       );
 
       if (!response.ok) {

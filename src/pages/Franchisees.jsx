@@ -64,10 +64,10 @@ function Franchisees() {
         enquiriesResponse,
       ] = await Promise.all([
         fetch(
-  "http://localhost:5000/api/dashboard/clients"
+  "/api/dashboard/clients"
 ),
 fetch(
-  "http://localhost:5000/api/dashboard/enquiries"
+  "/api/dashboard/enquiries"
 ),
       ]);
 

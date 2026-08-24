@@ -55,14 +55,14 @@ function TopPerformance() {
 
       const responses = await Promise.all([
         fetch(
-          "http://localhost:5000/api/dashboard/invoices"
-        ),
-        fetch(
-          "http://localhost:5000/api/dashboard/clients"
-        ),
-        fetch(
-          "http://localhost:5000/api/dashboard/enquiries"
-        ),
+  "/api/dashboard/invoices"
+),
+fetch(
+  "/api/dashboard/clients"
+),
+fetch(
+  "/api/dashboard/enquiries"
+),
       ]);
 
       if (
