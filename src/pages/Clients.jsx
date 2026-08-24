@@ -53,7 +53,7 @@ function Clients() {
       setError("");
 
       const response = await axios.get(
-        "http://localhost:5000/api/dashboard/clients"
+        `/api/dashboard/clients`
       );
 
       const data = Array.isArray(response.data)

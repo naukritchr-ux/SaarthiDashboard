@@ -59,7 +59,7 @@ function Enquiries() {
       setError("");
 
       const response = await axios.get(
-        "http://localhost:5000/api/dashboard/enquiries"
+        `/api/dashboard/enquiries`
       );
 
       const data = Array.isArray(response.data)

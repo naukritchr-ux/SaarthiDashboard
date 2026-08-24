@@ -60,7 +60,7 @@ function Invoices() {
       setError("");
 
       const response = await axios.get(
-        "http://localhost:5000/api/dashboard/invoices"
+        `/api/dashboard/invoices`
       );
 
       const data = Array.isArray(response.data)

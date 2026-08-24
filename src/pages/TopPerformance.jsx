@@ -580,15 +580,38 @@ function TopPerformance() {
   // =====================================================
   // TOTAL CLIENTS
   // =====================================================
+  // FIX:
+  // Calculate Associated Clients directly
+  // from the client API data instead of
+  // using performanceData.
+  //
+  // This prevents clients from becoming 0
+  // when their associated person/franchisee
+  // has no revenue record.
+  // =====================================================
 
   const totalPerformanceClients =
     useMemo(() => {
-      return performanceData.reduce(
-        (total, item) =>
-          total + item.clients,
+      return clients.reduce(
+        (total, client) => {
+          const name =
+            getPerformanceName(client);
+
+          if (
+            name &&
+            name !== "Unassigned"
+          ) {
+            return total + 1;
+          }
+
+          return total;
+        },
         0
       );
-    }, [performanceData]);
+    }, [
+      clients,
+      performanceType,
+    ]);
 
   // =====================================================
   // #1 PERFORMER

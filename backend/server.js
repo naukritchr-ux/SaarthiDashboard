@@ -250,7 +250,7 @@ app.get("/", (req, res) => {
 // RAW CLIENTS API
 // ==================================================
 
-app.get("/api/dashboard/clients", async (req, res) => {
+app.get("//clients", async (req, res) => {
   try {
     const clients = await fetchClients();
 
@@ -274,7 +274,7 @@ app.get("/api/dashboard/clients", async (req, res) => {
 // RAW ENQUIRIES API
 // ==================================================
 
-app.get("/api/dashboard/enquiries", async (req, res) => {
+app.get("//enquiries", async (req, res) => {
   try {
     const enquiries = await fetchEnquiries();
 
@@ -298,7 +298,7 @@ app.get("/api/dashboard/enquiries", async (req, res) => {
 // RAW INVOICES API
 // ==================================================
 
-app.get("/api/dashboard/invoices", async (req, res) => {
+app.get("//invoices", async (req, res) => {
   try {
     const invoices = await fetchInvoices();
 
@@ -323,7 +323,7 @@ app.get("/api/dashboard/invoices", async (req, res) => {
 // ==================================================
 
 app.get(
-  "/api/dashboard/summary",
+  "//summary",
   async (req, res) => {
     try {
       const period =

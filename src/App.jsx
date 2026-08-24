@@ -55,7 +55,7 @@ function App() {
       setApiError(false);
 
       const response = await fetch(
-        `http://localhost:5000/api/dashboard/summary?period=${selectedPeriod}`
+        `/api/dashboard/summary?period=${selectedPeriod}`
       );
 
       if (!response.ok) {
