@@ -23,7 +23,7 @@ import {
   Cell,
 } from "recharts";
 
-const API_BASE = "http://localhost:5000/api/dashboard";
+const API_BASE = "/api/dashboard";
 
 const COLORS = [
   "#8065a5",

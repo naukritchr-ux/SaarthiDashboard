@@ -32,10 +32,10 @@ import {
 } from "../utils/dateFilter";
 
 const CLIENTS_API =
-  "http://localhost:5000/api/dashboard/clients";
+  "/api/dashboard/clients";
 
 const ENQUIRIES_API =
-  "http://localhost:5000/api/dashboard/enquiries";
+  "/api/dashboard/enquiries";
 
 const COLORS = {
   purple: "#8065a5",

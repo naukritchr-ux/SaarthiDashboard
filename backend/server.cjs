@@ -101,8 +101,22 @@ app.get("/api/dashboard/summary", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(
-    `Sarthi360 backend running on http://localhost:${PORT}`
-  );
-});
+/*
+  Export the Express app for Vercel.
+*/
+module.exports = app;
+
+/*
+  Keep local development working.
+  When you run:
+      node backend/server.cjs
+
+  the local server will still start on port 5000.
+*/
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(
+      `Sarthi360 backend running on http://localhost:${PORT}`
+    );
+  });
+}

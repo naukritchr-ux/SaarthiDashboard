@@ -28,7 +28,7 @@ import {
   CartesianGrid,
 } from "recharts";
 
-const API_URL = "http://localhost:5000/api/dashboard/summary";
+const API_URL = "/api/dashboard/summary";
 
 const COLORS = [
   "#7c3aed",

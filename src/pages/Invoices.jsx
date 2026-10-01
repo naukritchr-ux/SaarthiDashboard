@@ -39,7 +39,7 @@ import {
 } from "../utils/dateFilter";
 
 const API_URL =
-  "http://localhost:5000/api/dashboard/invoices";
+  "/api/dashboard/invoices";
 
 const INFO_COLORS = [
   "#8065a5",

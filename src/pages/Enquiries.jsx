@@ -43,7 +43,7 @@ import {
 } from "../utils/dateFilter";
 
 const API_URL =
-  "http://localhost:5000/api/dashboard/enquiries";
+  "/api/dashboard/enquiries";
 
 const COLORS = [
   "#8065a5",
